@@ -24,12 +24,12 @@ Then you will be asked a series of question such as `NODE_ENV`, other optional e
 
 To add a remote to a git repository navigate to the repository and run the following command
 ```bash
-git remote add [remote-name] [remote-address]:[path-to-remote-folder]
+git remote add [remote-name] [username]@[remote-address]:[path-to-remote-folder]
 
 ```
 For example you can run
 ```bash
-git remote add deploy username@ip_address:/var/www/my-app
+git remote add deploy-ec2 ubuntu@ec2_address:/var/www/my-app
 
 ```
 
