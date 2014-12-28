@@ -66,3 +66,4 @@ except KeyboardInterrupt:
 # Make post receive file an executable
 st = os.stat(post_receive_path)
 os.chmod(post_receive_path, st.st_mode | stat.S_IEXEC)
+sys.stdout.write('Successfully created your githook at {}\n'.format(post_receive_path))
