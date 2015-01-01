@@ -5,7 +5,12 @@ This project makes git hooks for deployment to a remote server. It generates a t
 You can specify the `NODE_ENV` and other desired environmental variables such as `PORT` and different API keys.
 
 ##Usage
+
+###Install
 To use this script clone this repository on your remote server.
+```bash
+git clone https://github.com/SirenLLC/node-githook-deploy.git
+```
 
 ###Remote
 Run the following command on your server
