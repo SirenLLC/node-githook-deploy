@@ -5,6 +5,7 @@ This project makes git hooks for deployment to a remote server. It generates a t
 You can specify the `NODE_ENV` and other desired environmental variables such as `PORT` and different API keys.
 
 ##Usage
+
 ###Install
 
 You only need to clone this repository on your remote machine.
@@ -13,7 +14,6 @@ git clone https://github.com/SirenLLC/node-githook-deploy.git
 ```
 
 ###Execution
-To use this script clone this repository on your remote server.
 
 ####Remote
 Run the following command on your server
@@ -32,12 +32,12 @@ Then you will be asked a series of question such as `NODE_ENV`, other optional e
 
 To add a remote to a git repository navigate to the repository and run the following command
 ```bash
-git remote add [remote-name] [remote-address]:[path-to-remote-folder]
+git remote add [remote-name] [username]@[remote-address]:[path-to-remote-folder]
 
 ```
 For example you can run
 ```bash
-git remote add deploy username@ip_address:/var/www/my-app
+git remote add deploy-ec2 ubuntu@ec2_address:/var/www/my-app
 
 ```
 
