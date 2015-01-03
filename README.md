@@ -5,9 +5,17 @@ This project makes git hooks for deployment to a remote server. It generates a t
 You can specify the `NODE_ENV` and other desired environmental variables such as `PORT` and different API keys.
 
 ##Usage
+###Install
+
+You only need to clone this repository on your remote machine.
+``` bash
+git clone https://github.com/SirenLLC/node-githook-deploy.git
+```
+
+###Execution
 To use this script clone this repository on your remote server.
 
-###Remote
+####Remote
 Run the following command on your server
 ```bash
 python deploy-hook.py [app-name]
@@ -20,7 +28,7 @@ python deploy-hook.py /var/www/my-app
 Then you will be asked a series of question such as `NODE_ENV`, other optional environmental variables and the relative path to your applications main script.
 
 
-###Your machine
+####Your machine
 
 To add a remote to a git repository navigate to the repository and run the following command
 ```bash
@@ -49,8 +57,11 @@ This command will push your changes to the remote server, download the newly add
 * [Forever](https://github.com/foreverjs/forever.git)
 
 ##Structure
-    lib
-    ├── deploy-hook.py         - Generator script
+    node-githook-deploy
+    ├── LICENSE-MIT     
+	├── README.md
+    └── lib
+    	└── deploy-hook.py         - Generator script
 
 ##Potential Bugs:
 * This script might not work under the Windows operating system.
