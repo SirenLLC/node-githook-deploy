@@ -57,11 +57,11 @@ This command will push your changes to the remote server, download the newly add
 * [Forever](https://github.com/foreverjs/forever.git)
 
 ##Structure
-    node-githook-deploy
-    ├── LICENSE-MIT     
+	node-githook-deploy
+	├── LICENSE-MIT
 	├── README.md
-    └── lib
-    	└── deploy-hook.py         - Generator script
+	└── lib
+		└── deploy-hook.py		- Generator script
 
 ##Potential Bugs:
 * This script might not work under the Windows operating system.
