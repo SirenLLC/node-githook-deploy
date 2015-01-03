@@ -21,7 +21,7 @@ forever stop {app_path} || true
 {env_vars}forever start {app_path}
 """
 
-GIT_DEPLOY_NAME = 'deploy'
+GIT_DEPLOY_NAME = '.git'
 APP_PATH = os.path.join('$DEPLOY_DIR','dist', 'server','app.js')
 ENV_VARS = ''
 
