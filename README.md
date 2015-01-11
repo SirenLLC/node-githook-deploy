@@ -63,7 +63,7 @@ This command will push your changes to the remote server, download the newly add
 	└── lib
 		└── deploy-hook.py		- Generator script
 
-##Potential Bugs:
+##[Potential Bugs](https://github.com/SirenLLC/node-githook-deploy/issues)
 * This script might not work under the Windows operating system.
 
 ##To do
