@@ -12,7 +12,9 @@ post_receive_template = """#!/bin/sh
 DEPLOY_DIR='{abs_path}'
 GIT_WORK_TREE=$DEPLOY_DIR git checkout -f master
 cd $DEPLOY_DIR; npm install
+npm update
 bower install
+bower update
 grunt build
 """
 
